@@ -1,5 +1,5 @@
 """
-WSGI config for millenium_facom project.
+WSGI config for millenium_falcon project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "millenium_facom.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "millenium_falcon.settings")
 
 application = get_wsgi_application()
