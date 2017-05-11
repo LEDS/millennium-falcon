@@ -18,3 +18,10 @@ install:
 - pip install -r requirements.txt
 script:
 - sonar-scanner -Dsonar.login=$SONAR_TOKEN
+deploy:
+  provider: heroku
+  api_key:
+    secure: UNV3XNZLs/Gnzl+f3lCzklRL4a3qylcpQQOgtzGyLSKTxvwThJ8YBWu/HjZ6bKWFfYugcXDGTiIXWQNAV+Kajr43thKfld+KiEWUTuiPog9MzBAg5PyRTsU8SPdhFbkW+BXmwkxjkA58TWGZFr4n5JPpCIUj1+NNjsUCzCq8a3VHBVB5Xii36MwkKvhLlNSOyQoJlKka9wO6x/Q7cTPXFSI/HZauXIKuPR4pX6VfFghVJsnr3JTpCLSlBecH+0Hyw2TC50333NLIfYxgCZyT0c4S9HOBneMwjgtRDFPkcFGzA1wPp+NCml098+KaO159TUqPbYsRNM0HxsqTknWaLGHfFEqV06keC9YIkKbtkKSUmt3B/9ciL4+29EIMHrrbO+JJWgrmu0mFg3Uz7umg7z8gxVv9xgfyM+aXgw0LHdpHhw0lCTmN+ECbzZBlOq/0Hk2S8wZ87nqm9QAjVRezb3wGkkmQ0MNW90Gew+HCKtxDMl3YYF3jqjssSOouVcW8lu3u9vMk/eSCXLa4ILH7h6E6rFAO5PdQtJtn7Ntiadw5abmLQIt0xFtMOvBAvxP8ldW91oXW/bqCvVEG+2mCu/eIz43OUgAsk/crEOblc9MAdZMh7HCC+i64KLJyzjqeq6Ef2O5810pVb9w8xkZF+mBxUyI2rgvmJAbFeTHKOJ8=
+  app: millennium-falcon
+  on:
+    repo: icarodgl/millennium-falcon
