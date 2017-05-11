@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn millenium_falcon.wsgi --log-file -
+web: gunicorn --pythonpath millenium_falcon millenium_falcon.wsgi --log-file -
