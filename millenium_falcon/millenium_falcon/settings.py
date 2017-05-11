@@ -27,7 +27,7 @@ SECRET_KEY = '$6tj#ypgtp8=$@-ju5%08vwb4-69!#+yckqg)p8+4+pl#+^$)$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://millenium-falcon.herokuapp.com/',
+    'millenium-falcon.herokuapp.com',
     'localhost',
 ]
 
