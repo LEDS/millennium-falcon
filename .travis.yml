@@ -1,30 +1,20 @@
-language: python
 dist: trusty
 sudo: false
+language: python
 python:
-  - '3.5'
+- '3.5'
 jdk:
 - oraclejdk8
-
 addons:
   sonarqube:
-    organization: "leds-github"
+    organization: icarodgl-github
     token:
       secure: "$SONAR_TOKEN"
-
 branches:
   only:
   - master
-  - desenvolvimento
-
+  - Desenvolvimento
 install:
-  - pip install -r requirements.txt
-
+- pip install -r requirements.txt
 script:
-  - cd millenium_falcon
-  - python manage.py behave
-  - cd ..
-  - sonar-scanner
-
-notifications:
-  slack: $SLACK_TOKEN
+- sonar-scanner -Dsonar.login=$SONAR_TOKEN
