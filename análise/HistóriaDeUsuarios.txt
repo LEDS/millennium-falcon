@@ -1,9 +1,0 @@
-1- Eu, como coordenador do Leds, quero cadastrar outros coordenadores para distribuir a coordenação do Leds.
-
-2- Eu, como coordenador do Leds, quero cadastrar os dados do Leds para guardar as informações para o futuro.
-
-3- Eu, como coordenador do Leds, quero visualizar os dados em gráficos para administrar melhor o Leds.
-
-4- Eu, como Estudante do Leds, quero gerar meus certificados, para provar que participei de projetos do Leds.
-
-5- Eu, como coordenador do Leds, quero compartilhar os dados dos projetos para que todos vejam nossa superioridade!
