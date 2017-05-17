@@ -16,7 +16,7 @@ class Pessoa(models.Model):
     saida_leds = models.DateField(blank=True, null=True)
     email = models.CharField(max_length=255, null=True)
     telefone = models.CharField(max_length=255, null=True)
-    #bolsa = models.ForeignKey("gestao.Bolsa",blank=True, null=True)
+    bolsa = models.ForeignKey("gestao.Bolsa",blank=True, null=True)
     cpf = models.CharField(max_length=11,default="")
     habilidades = models.ManyToManyField("Habilidade")
     lattes = models.URLField(max_length=255, null=True)

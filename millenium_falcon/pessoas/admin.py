@@ -5,9 +5,9 @@ from pessoas.models import *
 
 admin.site.register(Habilidade)
 
-#class AlunoAdmin(admin.ModelAdmin):
-    #list_display = ['nome','papel','entrada_leds','periodo_atual']
-    #list_filter = ['papel','periodo_atual','habilidades']
+class AlunoAdmin(admin.ModelAdmin):
+    list_display = ['nome','papel','lattes','periodo_atual']
+    list_filter = ['papel','periodo_atual','habilidades']
 admin.site.register(Aluno)
 
 #class ProfessorAdmin(admin.ModelAdmin):
