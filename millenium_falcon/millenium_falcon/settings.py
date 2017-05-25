@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'gestao',
     'pessoas',
     'gunicorn',
+    'institucional'
 ]
 
 MIDDLEWARE = [

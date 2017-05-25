@@ -1,17 +1,24 @@
 from django.contrib import admin
-from pessoas.models import *
-# Register your models here.
 
+# Register your models here.
+from institucional.models import *
+from pessoas.models import *
 
 admin.site.register(Habilidade)
 
 class AlunoAdmin(admin.ModelAdmin):
-    list_display = ['nome','papel','lattes','periodo_atual']
+    list_display = ['nome','lattes','periodo_atual']
     list_filter = ['papel','periodo_atual','habilidades']
 admin.site.register(Aluno)
 
-#class ProfessorAdmin(admin.ModelAdmin):
+class ProfessorAdmin(admin.ModelAdmin):
+    list_display = ['nome','lattes','setor_vinculado']
+    list_display = []
+
 admin.site.register(Professor)
 
-#class ServidorAdmin(admin.MoedelAdmin):
+class ServidorAdmin(admin.ModelAdmin):
+    list_display = ['nome','lattes','setor_vinculado']
+    list_display = []
+
 admin.site.register(Servidor)

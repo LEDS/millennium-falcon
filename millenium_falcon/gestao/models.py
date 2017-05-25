@@ -7,7 +7,8 @@ class Projeto(models.Model):
     data_inicio = models.DateField()
     data_fim = models.DateField(blank=True, null=True)
     parceiro_envolvido = models.ForeignKey("Parceiro", null=True)
-    pessoas_envolvidas = models.ManyToManyField("pessoas.Pessoa",blank=True)
+    alunos_envolvidas = models.ManyToManyField("pessoas.Aluno",blank=True)
+    professores_envolvidas = models.ManyToManyField("pessoas.Professor",blank=True)
     def __str__(self):
         return self.nome_projeto
 
