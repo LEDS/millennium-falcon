@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 from django.db import models
-#from gestao.models import *
+from gestao.models import *
 
 # Create your models here.
 
@@ -29,12 +29,13 @@ class Aluno(Pessoa):
     banco = models.CharField(max_length=255,blank=True, null=True)
     numero_conta = models.CharField(max_length=255,blank=True, null=True)
     agencia = models.CharField(max_length=255,blank=True, null=True)
-    #curso
+    curso = models.ForeignKey("institucional.Instituicao",blank=True, null=True)
+
 
 class Professor(Pessoa):
-    setor_vinculado = models.CharField(max_length=255, null=True)
+    setor_vinculado = models.ForeignKey("institucional.Setor",blank=True, null=True)
     siape = models.CharField(max_length=255, null=True)
 
 class Servidor(Pessoa):
-    setor_vinculado = models.CharField(max_length=255, null=True)
+    setor_vinculado = models.ForeignKey("institucional.Setor",blank=True, null=True)
     siape = models.CharField(max_length=255, null=True)
