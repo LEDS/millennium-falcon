@@ -15,7 +15,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: LGogKsNBGKCxV3UU8RSvwgFZYyYceSSMhx/70r9yepVMNfs1ICePjvP6QIS+0t4eRGxVYZkYsOrPdTc8bTqamrohlNyNGrienGhTegDSEbQZ7RvKLPd8Leb/Htuln6Sa8sqsSyoUdt6LkdyVPDBOU4JnJNqrlNzt9PulkE7pRN1i0nucsyioIOHumyno6Jmtp6w9+7Ak+9LWIyUD648/Sw6hrdQ2Mu8Xan0bHV0iVY1A7087YHkhGtIalOcpszO8OhZ05pNKGSacgZHvxUdjE808pIqDUFzlzxYq+9dpVx3EGbOt9sJcPRmcPYUr+I1smFbPNVPRWwz+DRvZUOrXxBCr7p3kcL/puajS9h2POifGbqj4BqbFqLmBJ9pWvpUnuHpxDjspNAIw1R7uOEkAitc1RjNUC9tF74wFTB+ZYe8qpkapdpzLkM9OsoGCcHvnbyNO0rz9BURA1KdClxheO6FQVEekoq79ySvfqHG92agkLaVKWshHo52Ym1e7ZKX4iYmEG0Yyu+QTprefkt+bR3TdxRFPh2GzJzTkOUhzz1tSds+TsKAHlvet+NRKdDzlxphYQ/Ahes0RsLHOQKJQ38zVW1GTFSsGrFJ8vaZ+4BVqUYkbC4n1eoTttC4WSGP5iuV4qxiueRMST5sMqBzgkQwsHVFFEiKM7gPiyslxIas=
-  app: millenium-falcon
+    secure: heroku_key
+    app: millenium-falcon
   on:
     repo: icarodgl/millennium-falcon
