@@ -17,5 +17,6 @@ deploy:
   api_key:
     secure: c67df0ec-fb79-43cf-9de9-b56a374d1fc2
     app: millenium-falcon
+    
   on:
     repo: icarodgl/millennium-falcon
