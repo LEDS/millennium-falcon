@@ -5,13 +5,11 @@ python:
 - '3.5'
 jdk:
 - oraclejdk8
-addons:
-
 branches:
   only:
   - master
-  - Desenvolvimento
-  
+script:
+
 install:
 - pip install -r requirements.txt
 deploy:
