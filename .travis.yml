@@ -1,6 +1,5 @@
 dist: trusty
 sudo: false
-//detalhes da linguagem que vai ser utilizada na infra
 language: python
 python:
 - '3.5'
