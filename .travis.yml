@@ -15,12 +15,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-<<<<<<< HEAD
     secure: ZJVPms00k7/3wJr/2nVn/8QVGx+5bu0NwDvtxev4uRRpNQh79oYgf/fL2HyzqM5LTGM1VkybhCn/hVBDp+bKh+ipzOF6prUVikCr/vi7xIx8RFRji5EDeo5TCReM5cUhaajsqL0IxkyVq56HnIJz3kRXgL9r0lMeaZrHj88LRBi6zW4LGckI4d8v/eOIIe//Y9k0LqGYkqBmsvxBNXDv5FPzcbVUpzmzNHC7fno2NQWh7p9jLwVXYl0awFUbMmPz21YT1JfhURrNz6WhC9WCinJWUynUBxH56TuYUD7u4m7TPxErbFnl+MuJMh3Kj13a9uyZRWUi3vwStcL2VfynIvNdx4knE+bQjflZuu/yRXwqlxQoMsuRkqh+mlI3wlQVALOTIuqqeKvpEMwV90CLyHPJ9dkkT0XdQS0oeBTKOg4ZrGNxjO2FDS7Icla6p0k1R/fzbsttvQtM/ZEbYO6IuRzNxQk1e5o4opnNN83Jzyor5EFJEiMpUA25TUsIVNbzNy9wO4bQc62lMnSUDeuvusoDdarp1ytJokfoUAzdpkKQKtBMCplAGk8I7YdSaZKe3FtSzTJj2xiVPxqQZpyQ4BBgNmnSGQJ06JXtE4Qm7zXBcklB1VOyf+zkYRqL5BmbHGYgsS0rIC7YlSpYPZN6yhETFyI4rnYlKjn15jGwT7k=
-=======
-    secure: c67df0ec-fb79-43cf-9de9-b56a374d1fc2
     app: millenium-falcon
-    
->>>>>>> 240ec806935331a9ae8259afd4dc80e590d679bc
   on:
     repo: icarodgl/millennium-falcon
