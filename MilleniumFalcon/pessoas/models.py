@@ -22,7 +22,7 @@ class Jedi (models.Model):
 
     nome = models.CharField(max_length=255)
     matricula = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
+    email = models.EmailField()
     lattes = models.CharField(max_length=255)
 
     curso = models.ManyToManyField("Curso")
@@ -32,14 +32,20 @@ class Jedi (models.Model):
     data_saida = models.DateField()
 
     formacao = models.ManyToManyField("Formacao")
-    social = models.ManyToManyField("Social")
 
     projeto = models.ManyToManyField("produtos.Projeto")
     atividade = models.ManyToManyField("produtos.Atividade")
 
 class Social (models.Model):
-    nome = models.CharField(max_length=255)
+    nome_rede = (
+    ('fa', 'Facebook'),
+    ('tw', 'Twitter'),
+    ('st', 'Instagram'),
+    ('ld', 'Linkedin')
+    )
+    nome = models.CharField(max_length=2,choices=nome_rede)
     link = models.CharField(max_length=255)
+    jedi = models.ForeignKey(Jedi, on_delete=models.CASCADE)
 
 class Formacao (models.Model):
     nome = models.CharField(max_length=255)
