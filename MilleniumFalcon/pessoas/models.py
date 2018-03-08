@@ -1,25 +1,8 @@
 from django.db import models
+from produtos.models import Atividade, Projeto
 
 class Jedi (models.Model):
-    nivel = 
-    nome = models.CharField(max_length=200)
-    matricula = models.CharField(max_length=200)
 
-    curso = 
-    
-    nascimento = models.CharField(max_length=200)
-    email = models.CharField(max_length=200)
-    lattes = models.CharField(max_length=200)
-    data_entrada = models.CharField(max_length=200)
-    data_saida = models.CharField(max_length=200)
-
-    formacao = 
-    social = 
-
-    projeto = 
-    atividade = 
-
-class Nivel (models.Model):
     youngling = 'YL'
     padawan = 'PW'
     jedi = 'JD'
@@ -37,14 +20,30 @@ class Nivel (models.Model):
         default=youngling,
     )
 
+    nome = models.CharField(max_length=255)
+    matricula = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+    lattes = models.CharField(max_length=255)
+
+    curso = models.ManyToManyField("Curso")
+
+    nascimento = models.DateField()
+    data_entrada = models.DateField()
+    data_saida = models.DateField()
+
+    formacao = models.ManyToManyField("Formacao")
+    social = models.ManyToManyField("Social")
+
+    projeto = models.ManyToManyField("produtos.Projeto")
+    atividade = models.ManyToManyField("produtos.Atividade")
 
 class Social (models.Model):
-    nome = models.CharField(max_length=200)
-    link = models.CharField(max_length=200)
+    nome = models.CharField(max_length=255)
+    link = models.CharField(max_length=255)
 
 class Formacao (models.Model):
-    nome = models.CharField(max_length=200)
+    nome = models.CharField(max_length=255)
 
 class Curso (models.Model):
-    nome = models.CharField(max_length=200)
-    instituicao = models.CharField(max_length=200)
+    nome = models.CharField(max_length=255)
+    instituicao = models.CharField(max_length=255)
