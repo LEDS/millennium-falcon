@@ -1,6 +1,18 @@
 from django.contrib import admin
-from .models import Atividade, Projeto, Fomento
+from .models import Atividade, Projeto, Fomento, Parceiro
 
-admin.site.register(Atividade)
-admin.site.register(Projeto)
-admin.site.register(Fomento)
+
+class AtividadeAdmin(admin.ModelAdmin):
+    list_display = ['nome']
+    list_filter = ['nome']
+admin.site.register(Atividade,AtividadeAdmin)
+
+class ProjetoAdmin(admin.ModelAdmin):
+    list_display = ['nome']
+    list_filter = ['nome']
+admin.site.register(Projeto,ProjetoAdmin)
+
+class FomentoAdmin(admin.ModelAdmin):
+    list_display = ['nome']
+    list_filter = ['nome']
+admin.site.register(Fomento,FomentoAdmin)
