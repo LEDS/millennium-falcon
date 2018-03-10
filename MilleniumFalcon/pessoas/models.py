@@ -36,6 +36,9 @@ class Jedi (models.Model):
     projeto = models.ManyToManyField("produtos.Projeto")
     atividade = models.ManyToManyField("produtos.Atividade")
 
+    def __str__(self):
+        return self.nome
+
 class Social (models.Model):
     nome_rede = (
     ('fa', 'Facebook'),
@@ -46,10 +49,17 @@ class Social (models.Model):
     nome = models.CharField(max_length=2,choices=nome_rede)
     link = models.CharField(max_length=255)
     jedi = models.ForeignKey(Jedi, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.nome
 
 class Formacao (models.Model):
     nome = models.CharField(max_length=255)
+    def __str__(self):
+        return self.nome
 
 class Curso (models.Model):
     nome = models.CharField(max_length=255)
     instituicao = models.CharField(max_length=255)
+    def __str__(self):
+        return self.nome
+    
