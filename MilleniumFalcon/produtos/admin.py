@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Atividade, Projeto, Fomento, Parceiro
+from .models import Atividade
 
 
 class AtividadeAdmin(admin.ModelAdmin):
-    list_display = ['nome']
-    list_filter = ['nome']
+    list_display = ['nome','tipo' , 'local', 'data']
+    list_filter = ['tipo','local', 'data']
 admin.site.register(Atividade,AtividadeAdmin)
 
