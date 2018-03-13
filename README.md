@@ -1,7 +1,6 @@
 # millennium-falcon
-Projeto de gestão dos dados do leds
-
-    Novo projeto
+## Projeto de gestão dos dados do leds
+Este projeto visa auxiliar os gestores do Leds a gerenciar as informações, armazenando-as e gerando gáficos e certificados e outras utilidades necessárias para os gestores e alunos.
 	
 
 
